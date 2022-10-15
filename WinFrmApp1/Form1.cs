@@ -16,5 +16,13 @@ namespace WinFrmApp1
         {
             InitializeComponent();
         }
+
+        private void btCong_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(tbA.Text);
+            double b = double.Parse(tbB.Text);
+            double c = a + b;
+            tbKq.Text = c.ToString();
+        }
     }
 }
