@@ -35,6 +35,7 @@
             this.tbKq = new System.Windows.Forms.TextBox();
             this.lbKq = new System.Windows.Forms.Label();
             this.btCong = new System.Windows.Forms.Button();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbA
@@ -52,7 +53,7 @@
             this.tbA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbA.Location = new System.Drawing.Point(138, 55);
             this.tbA.Name = "tbA";
-            this.tbA.Size = new System.Drawing.Size(100, 22);
+            this.tbA.Size = new System.Drawing.Size(150, 22);
             this.tbA.TabIndex = 1;
             // 
             // tbB
@@ -60,7 +61,7 @@
             this.tbB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbB.Location = new System.Drawing.Point(138, 100);
             this.tbB.Name = "tbB";
-            this.tbB.Size = new System.Drawing.Size(100, 22);
+            this.tbB.Size = new System.Drawing.Size(150, 22);
             this.tbB.TabIndex = 3;
             // 
             // lbB
@@ -78,7 +79,7 @@
             this.tbKq.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbKq.Location = new System.Drawing.Point(138, 145);
             this.tbKq.Name = "tbKq";
-            this.tbKq.Size = new System.Drawing.Size(100, 22);
+            this.tbKq.Size = new System.Drawing.Size(150, 22);
             this.tbKq.TabIndex = 5;
             // 
             // lbKq
@@ -94,18 +95,29 @@
             // btCong
             // 
             this.btCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCong.Location = new System.Drawing.Point(163, 192);
+            this.btCong.Location = new System.Drawing.Point(213, 192);
             this.btCong.Name = "btCong";
             this.btCong.Size = new System.Drawing.Size(75, 29);
             this.btCong.TabIndex = 6;
             this.btCong.Text = "Cộng";
             this.btCong.UseVisualStyleBackColor = true;
             // 
+            // btTru
+            // 
+            this.btTru.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTru.Location = new System.Drawing.Point(113, 192);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(75, 29);
+            this.btTru.TabIndex = 7;
+            this.btTru.Text = "Trừ";
+            this.btTru.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
             this.Controls.Add(this.tbKq);
             this.Controls.Add(this.lbKq);
@@ -129,6 +141,7 @@
         private System.Windows.Forms.TextBox tbKq;
         private System.Windows.Forms.Label lbKq;
         private System.Windows.Forms.Button btCong;
+        private System.Windows.Forms.Button btTru;
     }
 }
 
