@@ -19,11 +19,7 @@ namespace WinFrmApp1
 
         private void btCong_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            if (tbA.Text != String.Empty)
-=======
-            
->>>>>>> feature-cal
+
             {
                 double a = double.Parse(tbA.Text);
                 double b = double.Parse(tbB.Text);
