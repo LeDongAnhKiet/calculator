@@ -19,18 +19,21 @@ namespace WinFrmApp1
 
         private void btCong_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(tbA.Text);
-            double b = double.Parse(tbB.Text);
-            double c = a + b;
-            tbKq.Text = c.ToString();
+            if (tbA.Text != String.Empty && tbB.Text != String.Empty)
+            {
+                double a = double.Parse(tbA.Text);
+                double b = double.Parse(tbB.Text);
+                double c = a + b;
+                tbKq.Text = c.ToString();
+            }
         }
 
         private void btTru_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(txtA.Text);
-            double b = double.Parse(txtB.Text);
+            double a = double.Parse(tbA.Text);
+            double b = double.Parse(tbB.Text);
             double c = a - b;
-            txtKetQua.Text = c.ToString();
+            tbKq.Text = c.ToString();
         }
     }
 }
