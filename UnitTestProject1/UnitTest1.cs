@@ -40,5 +40,19 @@ namespace CalcTest
             Calculation c = new Calculation(2, 0);
             c.Execute("/");
         }
+        public TestContext TestContext { get; set; }
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
+     @".\TestData.csv", "TestData#csv", DataAccessMethod.Sequential)]
+        [TestMethod]
+        public void TestWithDataSource()
+        {
+            int a = int.Parse(TestContext.DataRow[0].ToString());
+            int b = int.Parse(TestContext.DataRow[1].ToString());
+            string operation = (TestContext.DataRow[2].ToString()).Remove(0, 1);
+            int expected = int.Parse(TestContext.DataRow[3].ToString());
+            Calculation c = new Calculation(a, b);
+            int actual = c.Execute(operation);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
